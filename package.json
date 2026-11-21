@@ -1,0 +1,48 @@
+{
+  "name": "dsh-model-drag",
+  "version": "2.0.3",
+  "description": "Drag to reorder models and provider groups in the DeepSeek Harness model picker; the custom order persists across sessions and re-renders. · 在 DSH 模型选择菜单中拖动模型行/分组标题即可自由排序，顺序跨会话与重渲染保持。",
+  "license": "MIT",
+  "author": "YQein",
+  "keywords": [
+    "deepseek-harness",
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "plugin",
+    "model-picker",
+    "drag-and-drop",
+    "reorder"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0",
+    "dsh": ">=0.2.1-rc.1 <0.3.0-0"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "LICENSE",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

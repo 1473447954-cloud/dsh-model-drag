@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Model Drag Sort",
+    "description": "Drag model rows in the model picker to reorder them; the custom order persists across sessions and menu re-renders."
+  }
+}
